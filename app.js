@@ -1,7 +1,5 @@
-// REPLACE THESE WITH YOUR ACTUAL SUPABASE DETAILS FROM STEP 1
-const SUPABASE_URL = "https://your-project-id.supabase.co";
-const SUPABASE_KEY = "your-anon-public-key-here";
-
+const SUPABASE_URL = "https://Engldwqmexryljraqwwj.supabase.co";
+const SUPABASE_KEY = "sb_publishable_wUDmKlRAi5nF6G7xX2ItDQ_UeVPH4Ex";
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let currentRoomId = "";
