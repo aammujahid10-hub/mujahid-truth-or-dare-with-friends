@@ -1,6 +1,6 @@
 const SUPABASE_URL = "https://Engldwqmexryljraqwwj.supabase.co";
 const SUPABASE_KEY = "sb_publishable_wUDmKlRAi5nF6G7xX2ItDQ_UeVPH4Ex";
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let currentRoomId = "";
 let myName = "";
@@ -108,4 +108,4 @@ async function nextTurn() {
      current_turn: nextIndex, 
      current_action: "Waiting for selection..." 
    }).eq('id', currentRoomId);                          
-                                     }
+                                   }
