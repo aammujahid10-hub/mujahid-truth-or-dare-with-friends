@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truth Or Dare Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Truth Or Dare Online</h1>
+
+    <div id="setupArea">
+      <input type="text" id="username" placeholder="Enter your name">
+      <hr>
+      <button onclick="createRoom()">Create New Room</button>
+      <p style="margin: 10px 0;">— OR —</p>
+      <input type="text" id="roomCode" placeholder="Enter Room Code">
+      <button onclick="joinRoom()">Join Existing Room</button>
+    </div>
+
+    <div id="gameArea" class="hidden">
+      <h2 id="roomTitle">Room: ----</h2>
+      
+      <div id="playerListSection">
+        <h3>Players:</h3>
+        <ul id="playerList"></ul>
+      </div>
+
+      <div class="game-box">
+        <h3 id="turnDisplay">Waiting...</h3>
+        <p id="actionDisplay">Press Truth or Dare when it's your turn!</p>
+      </div>
+
+      <div id="actionButtons" class="hidden">
+        <button onclick="getCard('Truth')" class="btn-truth">Truth</button>
+        <button onclick="getCard('Dare')" class="btn-dare">Dare</button>
+        <button onclick="nextTurn()" class="btn-next">Next Player ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
