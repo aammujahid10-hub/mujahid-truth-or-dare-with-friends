@@ -1,0 +1,77 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover { background: #6d28d9; }
+hr { border: 0; border-top: 1px solid #334155; margin: 20px 0; }
+.hidden { display: none; }
+
+.game-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 2px solid #7c3aed;
+}
+
+#playerList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#playerList li {
+  background: #334155;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+#playerList li.active-turn {
+  background: #22c55e;
+  font-weight: bold;
+}
+
+.btn-truth { background: #06b6d4; }
+.btn-dare { background: #f43f5e; }
+.btn-next { background: #475569; }
